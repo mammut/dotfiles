@@ -1,0 +1,23 @@
+[include]
+  path = ~/.gitconfig_local
+
+[color]
+  ui = true
+
+[core]
+  pager = less -R
+  excludesfile = ~/.gitignore_global
+
+[alias]
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  cm = commit
+  co = checkout
+  br = branch
+  s = status -s
+  ps = push
+  pl = pull
+  a  = add
+
+[push]
+  default = matching
