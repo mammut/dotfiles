@@ -50,7 +50,7 @@ This will remove:
 - antigen-reinstall (good for removing a plugin)
 - antigen-bundle (good for adding a new plugin)
 
-## Dot files structure
+## Dotfiles structure
 
 The main file is `~/.zshrc` it starts by loading all the Antibody plugins.
 
