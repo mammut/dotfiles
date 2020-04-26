@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+
+{
+
+# set -xue  # To enable debugging
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+# for file in {zshrc,exports,aliases,functions,extra,vimrc,path,gitconfig,gitignore_global,tmux.conf,tmux-powerlinerc,zsh_plugins.txt,p10k.zsh}; do
+for file in $(cd $DIR/dotfiles && echo .*); do
+  ln -sfn $DIR/dotfiles/$file ~/$file
+done;
+ 
+# Fetch zsh antibody plugins
+~/.bin/antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+
+# Install tmux plugins
+bash ~/.tmux/plugins/tpm/bin/install_plugins
+
+# Install vim plugins
+vim +PluginInstall +qall
+
+# Place to put our own scripts
+mkdir -p ~/.bin
+
+}

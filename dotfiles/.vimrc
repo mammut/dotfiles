@@ -54,7 +54,7 @@ let javascript_enable_domhtmlcss = 1
 
 
 " colorscheme desert
-colorscheme nord
+silent! colorscheme nord
 set encoding=utf-8
 set laststatus=2
 set term=xterm-256color

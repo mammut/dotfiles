@@ -1,0 +1,20 @@
+# Hints of an alias when you don't use it but have it available
+djui/alias-tips
+
+# mkdir <T> && cd <T>
+caarlos0/zsh-mkc
+
+# oh-my-zsh plugins: https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
+robbyrussell/oh-my-zsh path:plugins/aws
+robbyrussell/oh-my-zsh path:plugins/jump # Mark directorys with an alias, jump to them from anywhere
+
+# zsh 
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-autosuggestions
+zdharma/fast-syntax-highlighting
+
+# Quickly jump between most frequent directories
+rupa/z
+
+# https://github.com/romkatv/powerlevel10k
+romkatv/powerlevel10k

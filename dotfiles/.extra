@@ -1,0 +1,7 @@
+# Extras
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# Fix C-a C-e terminal shortcuts
+bindkey -e

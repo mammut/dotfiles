@@ -7,28 +7,29 @@ alias j="jump"
 alias s="subl ."
 alias sp="spotify"
 alias t="tree -L 1"
+alias la="ls -la"
 alias usm="ssh juan.escalona@capela.inf.santiago.usm.cl"
 
-alias la="ls -la"
+# Reinstall antibody plugins
 
 # Time utilities
 alias week='date +"%V/52"'
 
 # Grep
-alias grep='grep --color'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias grep="grep --color"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
 
 # Ip addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
-# Lock the screen (when going AFK)
+# Lock the screen (when going AFK) OS X only
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Print each PATH entry on a separate line
-alias path='echo -e ${PATH//:/\\n}'
+alias path="echo -e ${PATH//:/\\n}"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec ${SHELL} -l"

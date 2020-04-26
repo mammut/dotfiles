@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Run this function to remove old plugins. Will reinstall the desired ones
+antibody-reinstall() {
+    echo "Removing directory" $(antibody home)
+    rm -rf $(antibody home) 
+
+    echo "Running bundle from" $HOME/.zsh_plugins.txt
+    antibody-bundle
+}
+
+# Run this function when adding new plugins to your ~/.zsh_plugins.sh
+antibody-bundle() {
+    antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+}
