@@ -12,4 +12,13 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mkdir -p ~/.bin
 curl -sfL git.io/antibody | sudo sh -s - -b ~/.bin
 
+case `uname` in
+  Darwin)
+    brew install fzf bat ripgrep
+  ;;
+  Linux)
+    sudo yum install -y fzf bat ripgrep
+  ;;
+esac
+
 }

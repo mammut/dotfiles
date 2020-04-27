@@ -14,6 +14,7 @@ Personal dotfiles, use at your own risk.
   ```
 - Terminal with MesloLGS NF font for best performance. See [Installation](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
 - Iterm2, optional but recommended. Preferences can be loaded from `com.googlecode.iterm2.plist` file.
+- fzf
 
 ## Installation
 

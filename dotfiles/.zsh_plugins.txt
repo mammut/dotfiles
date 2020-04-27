@@ -18,3 +18,9 @@ rupa/z
 
 # https://github.com/romkatv/powerlevel10k
 romkatv/powerlevel10k
+
+# aliases for git fzf integration
+wfxr/forgit
+
+# z integrated with fzf
+andrewferrier/fzf-z

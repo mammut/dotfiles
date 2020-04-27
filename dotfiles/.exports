@@ -13,3 +13,22 @@ export LC_ALL="en_US.UTF-8";
 export MANPAGER="less -X";
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=32";
+
+export FZF_DEFAULT_COMMAND='rg --hidden -l ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# --prompt='∼ ' --pointer='▶' --marker='✓' # Only available on v0.21.x
+export FZF_DEFAULT_OPTS="
+--layout=reverse
+--info=inline
+--height=80%
+--multi
+--preview-window=:hidden
+--preview '([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
+--color='hl:148,hl+:154,pointer:032,marker:010,bg+:237,gutter:008'
+--bind '?:toggle-preview'
+--bind 'ctrl-a:select-all'
+--bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
+--bind 'ctrl-e:execute(echo {+} | xargs -o vim)'
+--bind 'ctrl-v:execute(code {+})'
+"

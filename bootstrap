@@ -6,7 +6,6 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-# for file in {zshrc,exports,aliases,functions,extra,vimrc,path,gitconfig,gitignore_global,tmux.conf,tmux-powerlinerc,zsh_plugins.txt,p10k.zsh}; do
 for file in $(cd $DIR/dotfiles && echo .*); do
   ln -sfn $DIR/dotfiles/$file ~/$file
 done;
